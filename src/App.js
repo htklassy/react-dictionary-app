@@ -14,7 +14,7 @@ export default function App() {
         <div className="fixed-bottom">
           <footer className="text-center App-footer">
           <small>
-            Coded by Lynn Klassy
+            Coded by Lynn Klassy.
           </small>
         </footer>
         </div>
