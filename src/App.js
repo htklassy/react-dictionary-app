@@ -1,5 +1,6 @@
 import React from "react";
 import Dictionary from "./Dictionary.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 export default function App() {
