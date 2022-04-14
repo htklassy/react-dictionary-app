@@ -1,0 +1,10 @@
+h1 {
+    font-size: 150px !important;
+    text-align: center;
+    font-family: 'Playfair Display',
+    serif;
+    padding: 100px 0;
+}
+.Dictionary {
+    margin: 100px auto;
+}
