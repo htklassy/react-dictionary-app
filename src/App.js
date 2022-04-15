@@ -7,12 +7,12 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-Header"></header>
+        <header className="AppHeader"></header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="hello"/>
         </main>
         <div className="fixed-bottom">
-          <footer className="text-center App-footer">
+          <footer className="text-center AppFooter">
           <small>
             Coded by Lynn Klassy.
           </small>

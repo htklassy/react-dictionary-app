@@ -1,50 +1,65 @@
 import React, { useState } from "react";
+import Results from "./Results.js";
 import axios from "axios";
 
 import './Dictionary.css';
 
 export default function Dictionary() {
     let [keyword, setKeyword] = useState(null);
+    let [results, setResults] = useState(null);
+    let [loaded, setLoaded] = useState(false);
 
     function handleResponse(response) {
-        console.log(response.data[0]);
+        setResults(response.data[0]);
     }
 
-    function search(event){
-        event.preventDefault();
+    function search() {
 
-        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/kismet${keyword}`;
+        let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
         axios.get(apiUrl).then(handleResponse);
+    }
+    function handleSubmit(event) {
+        event.preventDefault();
+        search();
     }
 
     function handleKeywordChange(event) {
         setKeyword(event.target.value);
     }
-    return (
+
+    function load(){
+        setLoaded(true);
+        search();
+    }
+
+    if(loaded) {
+        return (
         <div className="Dictionary">
-           <h1>
-            dictionary
-                   </h1>
+           <h1>dictionary</h1>
            <div className="row">
-               <form onSubmit={search}>
+               <form onSubmit={handleSubmit}>
                    <div className="row">
-                       <div className="col"></div>
                        <div className="col">
                            <input 
                             type="search"
                             placeholder="Define..."
-                            className="form-control" onChange={handleKeywordChange}/>
+                            className="form-control" 
+                            onChange={handleKeywordChange} />
                        </div>
                        <div className="col">
                            <input 
                             type="submit"
                             value="Search"
                             className="btn btn-primary" />
-                        <div className="col"></div>
                        </div>
                    </div>
                </form>
+               <Results results={results} />
            </div>
         </div>
     );
+    } else {
+        load();
+        return "Loading";
+    }
 }
