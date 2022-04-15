@@ -9,12 +9,12 @@ export default function App() {
       <div className="container">
         <header className="AppHeader"></header>
         <main>
-          <Dictionary defaultKeyword="hello"/>
+          <Dictionary defaultKeyword="destiny"/>
         </main>
         <div className="fixed-bottom">
           <footer className="text-center AppFooter">
           <small>
-            Coded by Lynn Klassy.
+            This project was coded by Lynn Klassy and is <a href="https://magical-sunburst-c21841.netlify.app/">open-sourced on GitHub</a>
           </small>
         </footer>
         </div>

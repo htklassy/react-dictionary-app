@@ -1,0 +1,14 @@
+h3 {
+    font-family: 'Playfair Display',
+        serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 18px !important;
+    letter-spacing: 1px !important;
+    font-style: italic;
+}
+.Meaning .example {
+    color: black;
+    margin-top: 10px;
+
+}

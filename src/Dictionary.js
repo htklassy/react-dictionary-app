@@ -5,7 +5,7 @@ import axios from "axios";
 import './Dictionary.css';
 
 export default function Dictionary() {
-    let [keyword, setKeyword] = useState(null);
+    let [keyword, setKeyword] = useState("Destiny");
     let [results, setResults] = useState(null);
     let [loaded, setLoaded] = useState(false);
 
@@ -35,27 +35,18 @@ export default function Dictionary() {
     if(loaded) {
         return (
         <div className="Dictionary">
-           <h1>dictionary</h1>
-           <div className="row SearchEngine">
-               <form onSubmit={handleSubmit}>
-                   <div className="row">
-                       <div className="col">
-                           <input 
-                            type="search"
-                            placeholder="Define..."
-                            className="form-control" 
-                            onChange={handleKeywordChange} />
-                       </div>
-                       <div className="col">
-                           <input 
-                            type="submit"
-                            value="Search"
-                            className="btn btn-primary" />
-                       </div>
-                   </div>
-               </form>
-               <Results results={results} />
-           </div>
+           <section>
+               <h1>dictionary</h1>
+                <form onSubmit={handleSubmit}>
+                   <input 
+                    type="search"
+                    placeholder="Define..."
+                    className="form form-control searchEngine" 
+                    onChange={handleKeywordChange} 
+                    />
+                    </form>
+           </section>
+           <Results results={results} />
         </div>
     );
     } else {

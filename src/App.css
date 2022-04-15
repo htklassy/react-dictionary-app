@@ -1,3 +1,46 @@
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    padding: 25px 0px;
+    margin: 5px;
+    font-size: 16px;
+    font-family: 'Poppins',
+    sans-serif;
+    
+}
+
+button {
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+footer {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Poppins',
+    sans-serif;
+}
+.App {
+    font-family: 'Playfair Display',
+        serif;
+    max-width: 960px;
+    margin: 0 auto;
+}
 .App-footer {
     text-align: center;
+}
+.btn-primary {
+
+    display: block;
 }

@@ -1,14 +1,30 @@
 h1 {
-    font-size: 150px !important;
+    font-size: 72px !important;
     text-align: center;
     font-family: 'Playfair Display',
     serif;
-    padding: 100px 0;
+    font-style: italic;
+    margin: 60px auto !important;
 }
-h3 {
-    font-family: 'Playfair Display',
-    serif;
+.Dictionary input {
+    width: 75%;
+    margin: 0px auto;
+    padding: 6px 10px;
+    color: #333;
+    border: 1px solid #ddd;
 }
-.Dictionary {
-    margin: 100px auto;
+.btn-primary {
+    background-color: black !important;
+    color: white !important;
+    border-radius: 50px !important;
+    border: none !important;
+    padding: 5px 50px !important;
+    margin-top: 20px !important;
+    
+}.Dictionary section {
+    background: white;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgb(o o o / 10%);
+    margin: 20px auto;
 }

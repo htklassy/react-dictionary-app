@@ -1,0 +1,10 @@
+.Results h2 {
+    font-family: 'Playfair Display',
+        serif;
+    letter-spacing: 1px;
+    font-weight: bold !important;
+    font-size: 48px !important;
+    letter-spacing: 0 !important;
+    text-transform: capitalize;
+    padding: 40px 0;
+}
