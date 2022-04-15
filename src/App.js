@@ -14,7 +14,7 @@ export default function App() {
         <div className="fixed-bottom">
           <footer className="text-center AppFooter">
           <small>
-            This project was coded by Lynn Klassy and is <a href="https://magical-sunburst-c21841.netlify.app/">open-sourced on GitHub</a>
+            This project was coded by Lynn Klassy and is <a href="https://github.com/htklassy/react-dictionary-app" target="_blank" rel="noreferrer">open-sourced on GitHub</a>
           </small>
         </footer>
         </div>
