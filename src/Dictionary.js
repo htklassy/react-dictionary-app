@@ -36,7 +36,7 @@ export default function Dictionary() {
         return (
         <div className="Dictionary">
            <h1>dictionary</h1>
-           <div className="row">
+           <div className="row SearchEngine">
                <form onSubmit={handleSubmit}>
                    <div className="row">
                        <div className="col">

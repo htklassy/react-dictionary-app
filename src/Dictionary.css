@@ -5,6 +5,10 @@ h1 {
     serif;
     padding: 100px 0;
 }
+h3 {
+    font-family: 'Playfair Display',
+    serif;
+}
 .Dictionary {
     margin: 100px auto;
 }
